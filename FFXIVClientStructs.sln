@@ -3,9 +3,16 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 16
 VisualStudioVersion = 16.0.30523.141
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "FFXIVClientStructs", "FFXIVClientStructs.csproj", "{3DBAEE68-9D94-4807-BCB1-E42EDD52B489}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "FFXIVClientStructs", "FFXIVClientStructs\FFXIVClientStructs.csproj", "{3DBAEE68-9D94-4807-BCB1-E42EDD52B489}"
 EndProject
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "CExporter", "ida\CExporter\CExporter.csproj", "{C204099B-4058-4FCE-A0EC-60DE4ACB1DF9}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "CExporter", "CExporter\CExporter.csproj", "{C204099B-4058-4FCE-A0EC-60DE4ACB1DF9}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "DataSourceGen", "DataSourceGen\DataSourceGen.csproj", "{ED0D2C30-307B-47A3-9976-518FA7C5777B}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution Items", "{9A0FADBB-09DE-43D9-B74F-53DBD6B7457E}"
+	ProjectSection(SolutionItems) = preProject
+		.editorconfig = .editorconfig
+	EndProjectSection
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -21,6 +28,10 @@ Global
 		{C204099B-4058-4FCE-A0EC-60DE4ACB1DF9}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{C204099B-4058-4FCE-A0EC-60DE4ACB1DF9}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{C204099B-4058-4FCE-A0EC-60DE4ACB1DF9}.Release|Any CPU.Build.0 = Release|Any CPU
+		{ED0D2C30-307B-47A3-9976-518FA7C5777B}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{ED0D2C30-307B-47A3-9976-518FA7C5777B}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{ED0D2C30-307B-47A3-9976-518FA7C5777B}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{ED0D2C30-307B-47A3-9976-518FA7C5777B}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

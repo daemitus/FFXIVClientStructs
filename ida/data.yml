@@ -713,11 +713,7 @@ classes:
       47: OnUpdate
     funcs:
       0x1404DA640: ctor
-      0x1404DADA0: SetPosition
-      0x1404DAF20: SetAlpha
-      0x1404DB320: SetScale
       0x1404DB690: CalculateBounds
-      0x1404DD940: Draw
       0x1404D3AF0: ULDAddonData_SetupFromULDResourceHandle
       0x1404D5F10: ULDAddonData_ReadTPHD
       0x1404D6120: ULDAddonData_ReadAHSDAndLoadTextures

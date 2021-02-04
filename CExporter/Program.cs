@@ -15,7 +15,7 @@ namespace CExporter
     {
         public static void Main(string[] _)
         {
-            var outputBase = "../../../../";
+            var outputBase = "../../../ida/";
             File.WriteAllText($"{outputBase}ffxiv_client_structs.h",
                 Exporter.Instance.Export(GapStrategy.FullSize));
             File.WriteAllText($"{outputBase}ffxiv_client_structs_arrays.h",

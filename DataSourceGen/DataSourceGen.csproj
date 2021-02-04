@@ -1,19 +1,20 @@
-<?xml version="1.0" encoding="utf-8"?>
+﻿<?xml version="1.0" encoding="utf-8"?>
 <Project Sdk="Microsoft.NET.Sdk">
   <PropertyGroup>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
-    <OutputType>Library</OutputType>
-    <AppDesignerFolder>Properties</AppDesignerFolder>
-    <RootNamespace>FFXIVClientStructs</RootNamespace>
-    <AssemblyName>FFXIVClientStructs</AssemblyName>
-    <AssemblyProduct>FFXIVClientStructs</AssemblyProduct>
-    <TargetFrameworkIdentifier>.NETFramework</TargetFrameworkIdentifier>
-    <TargetFramework>net472</TargetFramework>
-    <FileAlignment>512</FileAlignment>
+    <RootNamespace>DataSourceGen</RootNamespace>
+    <AssemblyName>DataSourceGen</AssemblyName>
+    <AssemblyProduct>DataSourceGen</AssemblyProduct>
+    <AppendTargetFrameworkToOutputPath>false</AppendTargetFrameworkToOutputPath>
+    <CopyLocalLockFileAssemblies>true</CopyLocalLockFileAssemblies>
+    <TargetFramework>netstandard2.0</TargetFramework>
     <Deterministic>true</Deterministic>
-    <LangVersion>8.0</LangVersion>
+    <FileAlignment>512</FileAlignment>
+    <OutputType>Library</OutputType>
+    <LangVersion>9.0</LangVersion>
   </PropertyGroup>
+
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
     <DebugSymbols>true</DebugSymbols>
     <DebugType>full</DebugType>
@@ -24,6 +25,7 @@
     <WarningLevel>4</WarningLevel>
     <AllowUnsafeBlocks>true</AllowUnsafeBlocks>
   </PropertyGroup>
+
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
     <DebugType>pdbonly</DebugType>
     <Optimize>true</Optimize>
@@ -33,12 +35,11 @@
     <WarningLevel>4</WarningLevel>
     <AllowUnsafeBlocks>true</AllowUnsafeBlocks>
   </PropertyGroup>
+
   <ItemGroup>
-    <Compile Remove="CExporter\**" />
-    <Compile Remove="ida\CExporter\**" />
-    <EmbeddedResource Remove="CExporter\**" />
-    <EmbeddedResource Remove="ida\CExporter\**" />
-    <None Remove="CExporter\**" />
-    <None Remove="ida\CExporter\**" />
+    <PackageReference Include="Microsoft.CodeAnalysis.Analyzers" Version="3.3.2" PrivateAssets="all" />
+    <PackageReference Include="Microsoft.CodeAnalysis.CSharp" Version="3.8.0" PrivateAssets="all" />
+    <PackageReference Include="Scriban" Version="3.4.2" />
+    <PackageReference Include="YamlDotNet" Version="9.1.4" />
   </ItemGroup>
 </Project>

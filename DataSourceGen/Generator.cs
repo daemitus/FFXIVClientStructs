@@ -113,11 +113,3 @@ namespace FFXIVClientStructs.Mapper
 ";
     }
 }
-
-/*
-            
-
-
-
-       
- */

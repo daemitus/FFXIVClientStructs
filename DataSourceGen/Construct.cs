@@ -1,10 +1,9 @@
-﻿using System.Linq;
-using System.Collections.Generic;
+﻿using System.Collections.Generic;
 using YamlDotNet.Serialization;
 
 namespace DataSourceGen
 {
-    public struct DataConstruct
+    public class DataConstruct
     {
         [YamlMember(Alias = "version")]
         public string Version;
@@ -19,7 +18,7 @@ namespace DataSourceGen
         public Dictionary<string, ClassConstruct> Classes;
     }
 
-    public struct ClassConstruct
+    public class ClassConstruct
     {
         [YamlMember(Alias = "inherits_from")]
         public string InheritsFrom;
